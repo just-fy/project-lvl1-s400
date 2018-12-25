@@ -1,6 +1,15 @@
-import readlineSync from 'readline-sync';
+const readlineSync = require('readline-sync');
+const firstGreeting = 'Welcome to the Brain Games!';
 
-//var readlineSync = require('readline-sync');
+const greeting = () => {
+  console.log(firstGreeting);
+  const userName = readlineSync.question('What is your name?', {
+    defaultInput: 'Friend'
+  });
+  console.log('Hello, ' + userName + '!');
+};
 
-const userName = readlineSync.question('What is your name?');
-console.log('Hello, ' + userName + '!');
+export { greeting };
+
+
+
