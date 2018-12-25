@@ -2,7 +2,6 @@
   "name": "brain-games-hexlet-nastyafai",
   "version": "0.0.2",
   "description": "Brain games for everyone!",
-  "main": "index.js",
   "bin": {
     "greeting": "dist/index.js",
     "brain-games": "dist/bin/brain-games.js"
@@ -33,5 +32,8 @@
   },
   "dependencies": {
     "readline-sync": "^1.4.9"
-  }
+  },
+  "keywords": [
+    "brain-games"
+  ]
 }
