@@ -1,5 +1,9 @@
 #!/usr/bin/env node
+import readlineSync from 'readline-sync';
+import { greeting } from '..';
 
-console.log('Welcome to the Brain Games!');
+greeting();
 
-import index from '..'
+
+
+
