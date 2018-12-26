@@ -1,0 +1,11 @@
+env:
+  node: true
+  es6: true
+plugins:
+  - babel
+parserOptions:
+  ecmaVersion: 2016
+  sourceType: module
+parser: babel-eslint
+rules:
+  no-console: 0
