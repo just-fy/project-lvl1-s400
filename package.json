@@ -1,10 +1,12 @@
 {
   "name": "brain-games-hexlet-nastyafai",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Brain games for everyone!",
   "bin": {
     "greeting": "dist/index.js",
-    "brain-games": "dist/bin/brain-games.js"
+    "brainEven": "dist/index.js",
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
@@ -36,6 +38,7 @@
     "eslint-plugin-import": "^2.14.0"
   },
   "dependencies": {
+    "eslint-config-airbnb": "^17.1.0",
     "readline-sync": "^1.4.9"
   },
   "keywords": [
