@@ -10,6 +10,3 @@ const greeting = () => {
 };
 
 export { greeting };
-
-
-
