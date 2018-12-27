@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { playEvenGame, rounds } from '..';
+import defaultExport from '../games/even';
 
-playEvenGame(rounds);
+defaultExport();
