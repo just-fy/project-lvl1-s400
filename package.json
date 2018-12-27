@@ -3,8 +3,6 @@
   "version": "0.0.5",
   "description": "Brain games for everyone!",
   "bin": {
-    "greeting": "dist/index.js",
-    "brainEven": "dist/index.js",
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js"
   },
@@ -38,10 +36,10 @@
     "eslint-plugin-import": "^2.14.0"
   },
   "dependencies": {
-    "eslint-config-airbnb": "^17.1.0",
     "readline-sync": "^1.4.9"
   },
   "keywords": [
-    "brain-games"
+    "brain-games",
+    "hexlet"
   ]
 }
