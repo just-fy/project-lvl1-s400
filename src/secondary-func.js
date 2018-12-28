@@ -8,4 +8,12 @@ const getRandomOperator = () => {
   return operators[opIndex];
 };
 
-export { getRandomInt, isEven, getRandomOperator };
+const getGcd = (num1, num2) => {
+  if (!num2) {
+    return num1;
+  }
+
+  return getGcd(num2, num1 % num2);
+};
+
+export { getRandomInt, isEven, getRandomOperator, getGcd };
