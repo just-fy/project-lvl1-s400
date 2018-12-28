@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
 
 const greeting = () => {
-  console.log('Welcome to the Brain Games!\n');
+  console.log('Welcome to the Brain Games!');
 };
 
 const getPlayerName = () => {
@@ -21,15 +21,15 @@ const checkAnswer = (playerAnswer, correctAnswer, playerName) => {
   if (playerAnswer === correctAnswer) {
     console.log('Correct!');
   } else {
-    console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Let's try again, ${playerName}!`);
+    console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${playerName}!`);
   }
 };
 
 const mainGameStart = (nameGame, conditionGame) => {
   greeting();
-  const playerName = getPlayerName();
-  console.log(`Hello, ${playerName}\n`);
   console.log(conditionGame);
+  const playerName = getPlayerName();
+  console.log(`Hello, ${playerName}!\n`);
   for (let i = 1; i <= 3; i += 1) {
     const gamePair = nameGame();
     const currentQuestion = car(gamePair);

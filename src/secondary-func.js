@@ -4,7 +4,7 @@ const isEven = value => value % 2 === 0;
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
 
-  const opIndex = Math.random() * 4;
+  const opIndex = Math.floor(Math.random() * 3);
   return operators[opIndex];
 };
 
