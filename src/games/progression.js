@@ -1,13 +1,13 @@
-import mainGameStart from '..';
+import runGame from '..';
 import { cons, car, cdr } from 'hexlet-pairs';
-import getRandomInt from '../utils';
+import generateRandomNumber from '../utils';
 
 const description = 'What number is missing in the progression?\n';
 const sequenceLength = 8;
-
+start + step * i;
 const makeSequence = () => {
-  let start = getRandomInt(10);
-  const step = getRandomInt(10);
+  let start = generateRandomNumber(0, 10);
+  const step = generateRandomNumber(0, 10);
   const sequence = [start];
   for (let i = 0; i <= sequenceLength; i += 1) {
     const nextValue = start + step;
@@ -15,12 +15,10 @@ const makeSequence = () => {
     start = nextValue;
   }
 
-  const randomIndex = getRandomInt(10);
-  const correctAnswer = sequence[randomIndex];
-  const deleteIndex = sequence.indexOf(sequence[randomIndex]);
-  if (deleteIndex !== -1) {
-    sequence[deleteIndex] = '..';
-  }
+  const hiddenElementPosition = generateRandomNumber(0, 10);
+  const correctAnswer = sequence[hiddenElementPosition];
+  const deleteIndex = sequence.indexOf(sequence[hiddenElementPosition]);
+  sequence[deleteIndex] = '..';
   return cons(sequence, correctAnswer);
 };
 
@@ -31,4 +29,4 @@ const brainProgressionGame = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => mainGameStart(brainProgressionGame, description);
+export default () => runGame(brainProgressionGame, description);

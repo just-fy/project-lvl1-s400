@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import defaultExport from '../games/calc';
+import playCalcGame from '../games/calc';
 
-defaultExport();
+playCalcGame();

@@ -3,7 +3,7 @@ import { car, cdr } from 'hexlet-pairs';
 
 const rounds = 3;
 
-const mainGameStart = (nameGame, conditionGame) => {
+const runGame = (nameGame, conditionGame) => {
   console.log('Welcome to the Brain Games!');
   console.log(conditionGame);
   const playerName = readlineSync.question('What is your name? ', {
@@ -27,4 +27,4 @@ const mainGameStart = (nameGame, conditionGame) => {
   return console.log(`Congratulations, ${playerName}!`);
 };
 
-export { mainGameStart as default };
+export { runGame as default };
