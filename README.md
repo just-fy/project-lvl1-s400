@@ -11,3 +11,17 @@
 
 ## Update 
 ```npm update --save brain-games-hexlet-nastyafai```
+
+# Games
+### Brain Game Even
+#### Answer "yes" if number even otherwise answer "no".
+```brain-even```
+[![asciicast](https://asciinema.org/a/218760.png)]( https://asciinema.org/a/218760)
+### Brain Game Calc
+#### Find the result of the expression.
+```brain-calc```
+[![asciicast](https://asciinema.org/a/218761.png)]( https://asciinema.org/a/218761)
+### Brain Game Gcd
+#### Find the greatest common divisor of given numbers.
+```brain-gcd```
+[![asciicast](https://asciinema.org/a/218762.png)]( https://asciinema.org/a/218762)
