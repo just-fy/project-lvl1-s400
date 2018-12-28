@@ -16,4 +16,5 @@ const getGcd = (num1, num2) => {
   return getGcd(num2, num1 % num2);
 };
 
-export { getRandomInt, isEven, getRandomOperator, getGcd };
+export { getRandomInt, isEven, getRandomOperator };
+export { getGcd };
