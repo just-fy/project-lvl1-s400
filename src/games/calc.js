@@ -1,22 +1,34 @@
 import mainGameStart from '..';
-import { cons } from 'hexlet-pairs';
+import { cons, car, cdr } from 'hexlet-pairs';
 import getRandomInt from '../utils';
 
 const description = 'What is the result of the expression?\n';
 
-const getRandomOperator = () => {
-  const operators = ['+', '-', '*'];
-
-  const opIndex = Math.floor(Math.random() * 3);
-  return operators[opIndex];
+const getRandomExpression = (num1, num2) => {
+  const opIndex = getRandomInt(3);
+  let result;
+  switch (opIndex) {
+    case 0:
+      result = cons(`${num1} + ${num2}`, num1 + num2);
+      break;
+    case 1:
+      result = cons(`${num1} - ${num2}`, num1 - num2);
+      break;
+    case 2:
+      result = cons(`${num1} * ${num2}`, num1 * num2);
+      break;
+    default:
+      console.log('undefined operator');
+  }
+  return result;
 };
 
 const brainCalcGame = () => {
   const num1 = getRandomInt(100);
   const num2 = getRandomInt(100);
-  const op = getRandomOperator();
-  const question = `${num1} ${op} ${num2}`;
-  const correctAnswer = (eval(question)).toString();
+  const questionAndAnswer = getRandomExpression(num1, num2);
+  const question = car(questionAndAnswer);
+  const correctAnswer = (cdr(questionAndAnswer)).toString();
   return cons(question, correctAnswer);
 };
 
