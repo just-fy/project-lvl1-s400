@@ -1,8 +1,15 @@
 import mainGameStart from '..';
 import { cons } from 'hexlet-pairs';
-import { getRandomInt, getRandomOperator } from '../secondary-func';
+import getRandomInt from '../utils';
 
-const conditionCalcGame = 'What is the result of the expression?\n';
+const description = 'What is the result of the expression?\n';
+
+const getRandomOperator = () => {
+  const operators = ['+', '-', '*'];
+
+  const opIndex = Math.floor(Math.random() * 3);
+  return operators[opIndex];
+};
 
 const brainCalcGame = () => {
   const num1 = getRandomInt(100);
@@ -13,4 +20,4 @@ const brainCalcGame = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => mainGameStart(brainCalcGame, conditionCalcGame);
+export default () => mainGameStart(brainCalcGame, description);

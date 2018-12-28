@@ -1,8 +1,10 @@
 import mainGameStart from '..';
 import { cons } from 'hexlet-pairs';
-import { getRandomInt, isEven } from '../secondary-func';
+import getRandomInt from '../utils';
 
-const conditionEvenGame = 'Answer "yes" if number even otherwise answer "no".\n';
+const description = 'Answer "yes" if number even otherwise answer "no".\n';
+
+const isEven = value => value % 2 === 0;
 
 const brainEvenGame = () => {
   const question = getRandomInt(100);
@@ -10,4 +12,4 @@ const brainEvenGame = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => mainGameStart(brainEvenGame, conditionEvenGame);
+export default () => mainGameStart(brainEvenGame, description);
