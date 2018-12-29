@@ -27,5 +27,5 @@
 [![asciicast](https://asciinema.org/a/218762.png)]( https://asciinema.org/a/218762)
 ### Brain Game Prime
 #### Answer "yes" if number prime otherwise answer "no".
-```brain-gcd```
+```brain-prime```
 [![asciicast](https://asciinema.org/a/218911.png)]( https://asciinema.org/a/218911)
