@@ -16,20 +16,20 @@
 ### Brain Game Even
 #### Answer "yes" if number even otherwise answer "no".
 ```brain-even```
-[![asciicast](https://asciinema.org/a/218760.png)]( https://asciinema.org/a/218760)
+[![asciicast](https://asciinema.org/a/218969.png)]( https://asciinema.org/a/218969)
 ### Brain Game Calc
 #### Find the result of the expression.
 ```brain-calc```
-[![asciicast](https://asciinema.org/a/218761.png)]( https://asciinema.org/a/218761)
+[![asciicast](https://asciinema.org/a/218971.png)]( https://asciinema.org/a/218971)
 ### Brain Game Gcd
 #### Find the greatest common divisor of given numbers.
 ```brain-gcd```
-[![asciicast](https://asciinema.org/a/218762.png)]( https://asciinema.org/a/218762)
+[![asciicast](https://asciinema.org/a/218972.png)]( https://asciinema.org/a/218972)
 ### Brain Game Prime
 #### Answer "yes" if number prime otherwise answer "no".
 ```brain-prime```
-[![asciicast](https://asciinema.org/a/218911.png)]( https://asciinema.org/a/218911)
+[![asciicast](https://asciinema.org/a/218973.png)]( https://asciinema.org/a/218973)
 ### Brain Game Progression
 #### What number is missing in the progression?
 ```brain-progression```
-[![asciicast](https://asciinema.org/a/218911.png)]( https://asciinema.org/a/218911)
+[![asciicast](https://asciinema.org/a/218974.png)]( https://asciinema.org/a/218974)
