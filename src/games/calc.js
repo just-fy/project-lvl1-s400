@@ -4,6 +4,9 @@ import generateRandomNumber from '../utils';
 
 const description = 'What is the result of the expression?\n';
 
+const startRange = 0;
+const endRange = 100;
+
 const getRandomExpression = (num1, num2) => {
   const opIndex = generateRandomNumber(0, 3);
   let result;
@@ -23,8 +26,8 @@ const getRandomExpression = (num1, num2) => {
 };
 
 const brainCalcGame = () => {
-  const num1 = generateRandomNumber(0, 100);
-  const num2 = generateRandomNumber(0, 100);
+  const num1 = generateRandomNumber(startRange, endRange);
+  const num2 = generateRandomNumber(startRange, endRange);
   const questionAndAnswer = getRandomExpression(num1, num2);
   const question = car(questionAndAnswer);
   const correctAnswer = (cdr(questionAndAnswer)).toString();

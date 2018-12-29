@@ -3,22 +3,30 @@ import { cons, car, cdr } from 'hexlet-pairs';
 import generateRandomNumber from '../utils';
 
 const description = 'What number is missing in the progression?\n';
-const sequenceLength = 8;
-start + step * i;
+
+const startRange = 1;
+const endRange = 9;
+
+const sequenceLength = 10;
+const minStep = 1;
+const maxStep = 10;
+
 const makeSequence = () => {
-  let start = generateRandomNumber(0, 10);
-  const step = generateRandomNumber(0, 10);
-  const sequence = [start];
-  for (let i = 0; i <= sequenceLength; i += 1) {
-    const nextValue = start + step;
-    sequence.push(nextValue);
-    start = nextValue;
+  const hiddenElementPosition = generateRandomNumber(0, sequenceLength - 1);
+  const startElementSequence = generateRandomNumber(startRange, endRange);
+  const stepSequence = generateRandomNumber(minStep, maxStep);
+  const hiddenElementInSequence = startElementSequence + (stepSequence * hiddenElementPosition);
+  const sequence = [startElementSequence];
+  for (let i = 1; i < sequenceLength; i += 1) {
+    if (i === hiddenElementPosition) {
+      sequence[i] = '..';
+    } else {
+      const nextElement = startElementSequence + (stepSequence * i);
+      sequence.push(nextElement);
+    }
   }
 
-  const hiddenElementPosition = generateRandomNumber(0, 10);
-  const correctAnswer = sequence[hiddenElementPosition];
-  const deleteIndex = sequence.indexOf(sequence[hiddenElementPosition]);
-  sequence[deleteIndex] = '..';
+  const correctAnswer = hiddenElementInSequence;
   return cons(sequence, correctAnswer);
 };
 
