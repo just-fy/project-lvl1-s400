@@ -25,3 +25,7 @@
 #### Find the greatest common divisor of given numbers.
 ```brain-gcd```
 [![asciicast](https://asciinema.org/a/218762.png)]( https://asciinema.org/a/218762)
+### Brain Game Prime
+#### Answer "yes" if number prime otherwise answer "no".
+```brain-gcd```
+[![asciicast](https://asciinema.org/a/218911.png)]( https://asciinema.org/a/218911)
