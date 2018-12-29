@@ -1,8 +1,9 @@
 {
   "name": "brain-games-hexlet-nastyafai",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Brain games for everyone!",
   "bin": {
+    "brain-prime": "dist/bin/brain-prime.js",
     "brain-progression": "dist/bin/brain-progression.js",
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
