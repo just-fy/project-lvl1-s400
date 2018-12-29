@@ -12,22 +12,19 @@ const minStep = 1;
 const maxStep = 10;
 
 const makeSequence = () => {
-  const hiddenElementPosition = generateRandomNumber(0, sequenceLength - 1);
   const startElementSequence = generateRandomNumber(startRange, endRange);
   const stepSequence = generateRandomNumber(minStep, maxStep);
-  const hiddenElementInSequence = startElementSequence + (stepSequence * hiddenElementPosition);
-  const sequence = [startElementSequence];
-  for (let i = 1; i < sequenceLength; i += 1) {
-    if (i === hiddenElementPosition) {
-      sequence[i] = '..';
-    } else {
-      const nextElement = startElementSequence + (stepSequence * i);
-      sequence.push(nextElement);
-    }
+  const sequence = [];
+  for (let i = 0; i < sequenceLength; i += 1) {
+    const nextElement = startElementSequence + (stepSequence * i);
+    sequence.push(nextElement);
   }
-
+  const hiddenElementPosition = generateRandomNumber(0, sequenceLength - 1);
+  const hiddenElementInSequence = sequence[hiddenElementPosition];
+  sequence[hiddenElementPosition] = '..';
+  const question = sequence.join(' ');
   const correctAnswer = hiddenElementInSequence;
-  return cons(sequence, correctAnswer);
+  return cons(question, correctAnswer);
 };
 
 const brainProgressionGame = () => {

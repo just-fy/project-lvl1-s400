@@ -21,10 +21,10 @@ const runGame = (nameGame, conditionGame) => {
     } else {
       console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\n`);
       console.log(`Let's try again, ${playerName}!`);
-      return false;
+      return;
     }
   }
-  return console.log(`Congratulations, ${playerName}!`);
+  console.log(`Congratulations, ${playerName}!`);
 };
 
 export { runGame as default };

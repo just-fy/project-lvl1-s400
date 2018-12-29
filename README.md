@@ -29,3 +29,7 @@
 #### Answer "yes" if number prime otherwise answer "no".
 ```brain-prime```
 [![asciicast](https://asciinema.org/a/218911.png)]( https://asciinema.org/a/218911)
+### Brain Game Progression
+#### What number is missing in the progression?
+```brain-progression```
+[![asciicast](https://asciinema.org/a/218911.png)]( https://asciinema.org/a/218911)
