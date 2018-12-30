@@ -8,12 +8,14 @@ const startRange = 1;
 const endRange = 100;
 
 const isPrime = (number) => {
-  const searchUp = Math.sqrt(number);
-  for (let i = 2; i < searchUp; i += 1) {
+  if (number < 2) return false;
+  const searchTo = Math.sqrt(number);
+  for (let i = 2; i <= searchTo; i += 1) {
     if (number % i === 0) return false;
   }
-  return number !== 1 && number !== 0 && number > 0;
+  return true;
 };
+
 
 const brainPrimeGame = () => {
   const question = generateRandomNumber(startRange, endRange);
